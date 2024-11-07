@@ -50,6 +50,11 @@ public class Point
 
     public int DrawingId { get; set; }
 
+    public char Character { get; set; }
+
+    [MaxLength(20)]  
+    public string Color { get; set; }  
+
     [ForeignKey("DrawingId")]
     public Drawing Drawing { get; set; }  
 }
